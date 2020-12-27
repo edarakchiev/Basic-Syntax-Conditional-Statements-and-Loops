@@ -1,0 +1,11 @@
+str_num = input()
+num_list = []
+
+for num in str_num:
+    num_list.append(int(num))
+num_list.sort()
+num_list.reverse()
+
+for index in range(len(num_list)):
+    num = int(num_list[index])
+    print(f"{num}", end="")
