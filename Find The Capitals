@@ -1,0 +1,13 @@
+word = input()
+
+letter_list = []
+index_list = []
+
+for letter in word:
+    letter_list.append(letter)
+
+for index in range(len(letter_list)):
+    if 64 < ord(letter_list[index]) <= 90:
+        index_list.append(index)
+
+print(index_list)
